@@ -51,15 +51,19 @@
     <%= f.label :trainer_id %><br>
     <%= collection_select(:tokimon, :trainer_id, Trainer.all, :id, :name, prompt: true) %>
       </div>
-  <div class="tokifield">
+<!--   <div class="tokifield">
     <%= f.label :total %><br>
     <%= f.number_field :total %>
-  </div>
+  </div> -->
 <!--     <%= f.label :trainer_id %><br>
     <%= f.number_field :trainer_id %> -->
   <br><br>
-  <div class="actions">
+  <div class="actions" style="font-size:20px;">
     <%= f.submit %>
   </div>
+  <div class='rubybutton'>
+  <%= link_to 'Back', tokimons_path %>
+  </div>
+  <br>
   </div>
 <% end %>

@@ -1,59 +1,65 @@
+<body>
+<br><br><br>
+<div class="text-center">
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @tokimon.name %>
+  <h1><%= @tokimon.name %></h1>
 </p>
 
-<p>
+<p class="att">
   <strong>Weight:</strong>
   <%= @tokimon.weight %>
 </p>
 
-<p>
+<p class="att">
   <strong>Height:</strong>
   <%= @tokimon.height %>
 </p>
 
-<p>
+<p class="att">
   <strong>Fly:</strong>
   <%= @tokimon.fly %>
 </p>
 
-<p>
+<p class="att">
   <strong>Fight:</strong>
   <%= @tokimon.fight %>
 </p>
 
-<p>
+<p class="att">
   <strong>Fire:</strong>
   <%= @tokimon.fire %>
 </p>
 
-<p>
+<p class="att">
   <strong>Water:</strong>
   <%= @tokimon.water %>
 </p>
 
-<p>
+<p class="att">
   <strong>Electric:</strong>
   <%= @tokimon.electric %>
 </p>
 
-<p>
+<p class="att">
   <strong>Ice:</strong>
   <%= @tokimon.ice %>
 </p>
 
-<p>
+<p class="att">
   <strong>Total:</strong>
   <%= @tokimon.total %>
 </p>
 
-<p>
+<p class="att">
   <strong>Trainer:</strong>
   <%= @tokimon.trainer_id %>
 </p>
 
+<div class="rubybutton">
 <%= link_to 'Edit', edit_tokimon_path(@tokimon) %> |
 <%= link_to 'Back', tokimons_path %>
+</div>
+</div>
+</body>

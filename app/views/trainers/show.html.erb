@@ -1,14 +1,21 @@
+<body>
+<br><br><br>
+<div class="text-center">
 <p id="notice"><%= notice %></p>
 
-<p>
+<p class="att">
   <strong>Name:</strong>
   <%= @trainer.name %>
 </p>
 
-<p>
+<p class="att">
   <strong>Level:</strong>
   <%= @trainer.level %>
 </p>
 
+<div class="rubybutton">
 <%= link_to 'Edit', edit_trainer_path(@trainer) %> |
 <%= link_to 'Back', trainers_path %>
+</div>
+</div>
+</body>

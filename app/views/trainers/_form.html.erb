@@ -10,16 +10,22 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+  <div class="text-center">
+  <div class="tokifield">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
+  <div class="tokifield">
     <%= f.label :level %><br>
     <%= f.number_field :level %>
   </div>
-  <div class="actions">
+  <br><br>
+  <div class="actions" style="font-size:20px;">
     <%= f.submit %>
+  </div>
+  <div class='rubybutton'>
+  <%= link_to 'Back', trainers_path %>
+  </div>
+  <br>
   </div>
 <% end %>
