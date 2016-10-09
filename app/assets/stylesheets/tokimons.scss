@@ -2,6 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.docstyle {
+	background-image: url("bucolic.jpg");
+	font-family: Times;
+}
+
+#tokiheader {
+	font-size: 40px;
+}
+
 .text-center {
   text-align: center;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.tokifield {
+	display: inline-block;
+	font-size: 20px;
+}
+
+.shiftdown {
+	position: absolute;
+	top: 300px;
 }
