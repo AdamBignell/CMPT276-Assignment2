@@ -3,15 +3,36 @@
 <div class="text-center">
 <p id="notice"><%= notice %></p>
 
-<p class="att">
+<p class="att2">
   <strong>Name:</strong>
   <%= @trainer.name %>
 </p>
 
-<p class="att">
+<p class="att2">
   <strong>Level:</strong>
   <%= @trainer.level %>
 </p>
+ 
+<h3> <%= @trainer.name %>'s Tokimon </h3>
+
+<table align="center">
+<div>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Weight</th>
+      <th>Height</th>
+      <th>Fly</th>
+      <th>Fight</th>
+      <th>Fire</th>
+      <th>Water</th>
+      <th>Electric</th>
+      <th>Ice</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+
+</table>
 
 <div class="rubybutton">
 <%= link_to 'Edit', edit_trainer_path(@trainer) %> |
