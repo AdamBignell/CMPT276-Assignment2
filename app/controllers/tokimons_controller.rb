@@ -24,9 +24,9 @@ class TokimonsController < ApplicationController
   # POST /tokimons
   # POST /tokimons.json
   def create
-    @tokimon = Tokimon.new(tokimon_params)
-    @trainer = Trainer.find(params[:trainer_id])
-    @tokimon.trainer = @trainer
+    # @tokimon = Tokimon.new(tokimon_params)
+    # @trainer = Trainer.find(params[:trainer_id])
+    # @tokimon.trainer = @trainer
 
     respond_to do |format|
       if @tokimon.save
