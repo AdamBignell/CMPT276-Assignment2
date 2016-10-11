@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  resources :trainers
-  resources :tokimons
+  resources :trainers do
+    resources :tokimons do
+    end
+  end
+  resources :tokimons do
+    resources :trainers do
+    end
+  end
   resources :widgets
 
   # The priority is based upon order of creation: first created -> highest priority.

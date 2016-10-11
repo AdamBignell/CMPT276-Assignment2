@@ -11,6 +11,7 @@ class TokimonsController < ApplicationController
   # GET /tokimons/1.json
   def show
     @tokimon = Tokimon.find(params[:id])
+    @trainer = Trainer.find(@tokimon.trainer_id)
   end
 
   # GET /tokimons/new
@@ -35,6 +36,8 @@ class TokimonsController < ApplicationController
         format.html { render :new }
         format.json { render json: @tokimon.errors, status: :unprocessable_entity }
       end
+    @trainer = Trainer.find(@tokimon.trainer_id)
+    @trainer.tokimons << @tokimon
     end
   end
 
