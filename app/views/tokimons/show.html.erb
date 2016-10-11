@@ -49,20 +49,10 @@
 
 <p class="att">
   <strong>Total:</strong>
-  <%= @tokimon.total %>
+  <%= @tokimon.fly + @tokimon.fight + @tokimon.fire + @tokimon.water + @tokimon.electric + @tokimon.ice %>
 </p>
 
 <h2> I was caught by: <h2>
-
-<p class="att2">
-  <strong>Name:</strong>
-  <%= @tokimon.trainer.name %>
-</p>
-
-<p class="att2">
-  <strong>Level:</strong>
-  <%= @tokimon.trainer.level %>
-</p>
 
 <div class="rubybutton">
 <%= link_to 'Edit', edit_tokimon_path(@tokimon) %> |

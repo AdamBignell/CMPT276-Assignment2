@@ -1,5 +1,5 @@
 class TokimonsController < ApplicationController
-  before_action :set_tokimon, only: [:show, :edit, :update, :destroy]
+  before_action :set_tokimon, only: [:edit, :update, :destroy]
 
   # GET /tokimons
   # GET /tokimons.json
@@ -10,6 +10,7 @@ class TokimonsController < ApplicationController
   # GET /tokimons/1
   # GET /tokimons/1.json
   def show
+    @tokimon = Tokimon.find(params[:id])
   end
 
   # GET /tokimons/new
@@ -24,9 +25,7 @@ class TokimonsController < ApplicationController
   # POST /tokimons
   # POST /tokimons.json
   def create
-    # @tokimon = Tokimon.new(tokimon_params)
-    # @trainer = Trainer.find(params[:trainer_id])
-    # @tokimon.trainer = @trainer
+    @tokimon = Tokimon.new(tokimon_params)
 
     respond_to do |format|
       if @tokimon.save

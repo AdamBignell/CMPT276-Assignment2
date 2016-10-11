@@ -12,8 +12,12 @@
   <strong>Level:</strong>
   <%= @trainer.level %>
 </p>
-<h3> <%= @trainer.name %>'s Tokimon </h3>
 
+<div class="rubybutton">
+<%= link_to 'Edit', edit_trainer_path(@trainer) %> |
+<%= link_to 'Back', trainers_path %>
+<h3> <%= @trainer.name %>'s Tokimon </h3>
+<br>
 <table align="center">
 <div>
   <thead>
@@ -32,10 +36,6 @@
   </thead>
 
 </table>
-
-<div class="rubybutton">
-<%= link_to 'Edit', edit_trainer_path(@trainer) %> |
-<%= link_to 'Back', trainers_path %>
 </div>
 </div>
 </body>
