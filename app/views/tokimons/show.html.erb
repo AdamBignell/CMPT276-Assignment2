@@ -4,7 +4,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <h1><%= @tokimon.name %></h1>
+  <h1>Tokimon: <%= @tokimon.name %></h1>
 </p>
 
 <p class="att">
@@ -51,22 +51,23 @@
   <strong>Total:</strong>
   <%= @tokimon.fly + @tokimon.fight + @tokimon.fire + @tokimon.water + @tokimon.electric + @tokimon.ice %>
 </p>
-
-<h2> I was caught by: <h2>
+<br>
+<div class="rubybutton">
+| <%= link_to 'Edit Stats', edit_tokimon_path(@tokimon) %> |
+</div>
+<h2> Trained By: <h2>
   <p class="att2">
-    <strong>Name:</strong>
-    <%= @trainer.name %>
+    <strong>Name: <%= link_to @trainers.find(@tokimon.trainer_id).name, @trainers.find(@tokimon.trainer_id) %></strong>
   </p>
 
   <p class="att2">
     <strong>Level:</strong>
     <%= @trainer.level %>
   </p>
-
+<br><br>
 <div class="rubybutton">
-<%= link_to 'Trainer Profile', @trainer %> |
-<%= link_to 'Edit', edit_tokimon_path(@tokimon) %> |
-<%= link_to 'Back to Tokidex', tokimons_path %>
+| <%= link_to 'Back to Tokidex', tokimons_path %> |
 </div>
+<br>
 </div>
 </body>

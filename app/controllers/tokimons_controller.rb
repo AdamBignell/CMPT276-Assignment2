@@ -5,12 +5,14 @@ class TokimonsController < ApplicationController
   # GET /tokimons.json
   def index
     @tokimons = Tokimon.all
+    @trainers = Trainer.all
   end
 
   # GET /tokimons/1
   # GET /tokimons/1.json
   def show
     @tokimon = Tokimon.find(params[:id])
+    @trainers = Trainer.all
     @trainer = Trainer.find(@tokimon.trainer_id)
   end
 
@@ -36,8 +38,11 @@ class TokimonsController < ApplicationController
         format.html { render :new }
         format.json { render json: @tokimon.errors, status: :unprocessable_entity }
       end
+    end
     @trainer = Trainer.find(@tokimon.trainer_id)
     @trainer.tokimons << @tokimon
+    if (@trainer.tokimons.size % 3 == 0)
+      @trainer.level = (@trainer.tokimons.size / 3)
     end
   end
 
