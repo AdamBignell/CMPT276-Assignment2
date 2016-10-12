@@ -27,7 +27,7 @@ class TrainersController < ApplicationController
   # POST /trainers.json
   def create
     @trainer = Trainer.new(trainer_params)
-
+    @trainer.update_attribute(:level, 0)
     respond_to do |format|
       if @trainer.save
         format.html { redirect_to @trainer, notice: 'Trainer was successfully created.' }
@@ -56,7 +56,7 @@ class TrainersController < ApplicationController
   # DELETE /trainers/1
   # DELETE /trainers/1.json
   def destroy
-    @trainer.destroy
+    @trainer.destroy_all
     respond_to do |format|
       format.html { redirect_to trainers_url, notice: 'Trainer was successfully destroyed.' }
       format.json { head :no_content }
