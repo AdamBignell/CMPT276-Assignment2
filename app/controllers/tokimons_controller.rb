@@ -39,11 +39,11 @@ class TokimonsController < ApplicationController
         format.json { render json: @tokimon.errors, status: :unprocessable_entity }
       end
     end
+    @tokimon.update_attribute(:total, @tokimon.fly + @tokimon.fight + @tokimon.fire + @tokimon.water + @tokimon.electric + @tokimon.ice )
     @trainer = Trainer.find(@tokimon.trainer_id)
     @trainer.tokimons << @tokimon
-    if (@trainer.tokimons.size % 3 == 0)
-      @trainer.level = (@trainer.tokimons.size / 3)
-    end
+    @allToki = @trainer.tokimons
+    @trainer.update_attribute(:level, (@allToki.size / 3).floor)
   end
 
   # PATCH/PUT /tokimons/1
@@ -68,6 +68,9 @@ class TokimonsController < ApplicationController
       format.html { redirect_to tokimons_url, notice: 'Tokimon was successfully destroyed.' }
       format.json { head :no_content }
     end
+    @trainer = Trainer.find(@tokimon.trainer_id)
+    @allToki = @trainer.tokimons
+    @trainer.update_attribute(:level, (@allToki.size / 3).floor)
   end
 
   private

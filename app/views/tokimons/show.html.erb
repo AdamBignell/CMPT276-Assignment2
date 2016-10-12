@@ -68,7 +68,7 @@
 <br><br>
 <div class="rubybutton">
 <%= link_to 'Back to Tokidex', tokimons_path %> |
-<%= link_to 'Show Trainer Card', tokimons_path %>
+<%= link_to 'Show Trainer Card',  @trainers.find(@tokimon.trainer_id) %>
 </div>
 <br>
 </div>

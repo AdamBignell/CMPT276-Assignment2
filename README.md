@@ -1,3 +1,16 @@
+# CMPT-276 Assignment 2 - Adam Bignell - SN:301271832
+
+Note that for aesthetic purposes, a few of the default buttons of been renamed:
+Show (Tokimon) -> Stats
+Show (Trainer) -> Trainer Cards
+Destroy (Tokimon) -> Release
+
+Features:
+  - Customized Headers for Tokidex, New Tokimon/Trainer, Trainers
+  - 'Trainer' column of tokidex displays trainer name rather than trainer_id
+  - Level cannot be set by the user; must be legitimately achieved by having Tokimon
+  - Trainer names are clickable links that lead to Trainer Cards
+
 # ruby-getting-started
 
 A barebones Rails app, which can easily be deployed to Heroku.
@@ -65,4 +78,3 @@ You can also use Docker to release to Heroku:
 For more information about using Ruby on Heroku, see these Dev Center articles:
 
 - [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
-

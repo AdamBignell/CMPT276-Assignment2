@@ -38,7 +38,7 @@
         <td><%= tokimon.water %></td>
         <td><%= tokimon.electric %></td>
         <td><%= tokimon.ice %></td>
-        <td><%= tokimon.fly + tokimon.fight + tokimon.fire + tokimon.water + tokimon.electric + tokimon.ice%></td>
+        <td><%= tokimon.total%></td>
         <td><%= link_to @trainers.find(tokimon.trainer_id).name, @trainers.find(tokimon.trainer_id) %></td>
         <td><%= link_to 'Stats', tokimon %></td>
         <td><%= link_to 'Edit', edit_tokimon_path(tokimon) %></td>
