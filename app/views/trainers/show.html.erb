@@ -35,7 +35,7 @@
 </thead>
 
 <tbody>
-  <%= @alltokimons.each do |tokimon| %>
+  <% @alltokimons.each do |tokimon| %>
     <tr>
       <td><%= tokimon.name %></td>
       <td><%= tokimon.weight %></td>
@@ -54,6 +54,15 @@
   <% end %>
 </tbody>
 </table>
+
+<div id="tokiChart">
+  <canvas>
+  <% @alltokimons.each do |tokimon| %>
+  fillRect(20,20,<%= tokimon.height * 10 %>,<%= tokimon.weight %>)
+    <%= tokimon.name %>
+  <% end %>
+</canvas>
+</div>
 
 <br>
 <div class="rubybutton">

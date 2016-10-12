@@ -24,6 +24,10 @@ body {
 	font-family: serif;
 }
 
+#tokiChart {
+	text-align: center;
+}
+
 #tokiheader {
 	font-size: 50px;
 	font-family: serif;
