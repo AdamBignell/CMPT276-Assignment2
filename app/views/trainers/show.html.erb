@@ -14,7 +14,7 @@
 
 <div class="rubybutton">
 <%= link_to 'Edit Trainer', edit_trainer_path(@trainer) %> |
-<%= link_to 'Destroy Trainer', trainer, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Destroy Trainer', @trainer, method: :delete, data: { confirm: 'Are you sure?' } %>
 <h3> <%= @trainer.name %>'s Tokimon: </h3>
 <table align="center">
 <div>
