@@ -10,6 +10,10 @@ Features:
   - 'Trainer' column of tokidex displays trainer name rather than trainer_id
   - Level cannot be set by the user; must be legitimately achieved by having Tokimon
   - Trainer names are clickable links that lead to Trainer Cards
+  - Upon Trainer deletion, all associated Tokimon are released
+  - Trainer is a required field for tokimon creation
+  - New records have default values
+  - Editting either has default values or previously assigned value
 
 # ruby-getting-started
 
