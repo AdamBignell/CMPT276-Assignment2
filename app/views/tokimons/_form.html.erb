@@ -13,39 +13,39 @@
   <div class="text-center">
   <div class="tokifield">
     <%= f.label :name %><br>
-    <%= f.text_field :name , :value => (@tokimon.name || 'No Name'%>
+    <%= f.text_field :name , :value => (f.object.name || 'No Name'%>
   </div>
   <div class="tokifield">
     <%= f.label :weight %><br>
-    <%= f.text_field :weight, :value => (@tokimon.weight || 0.0) %>
+    <%= f.text_field :weight, :value => (f.object.weight || 0.0) %>
   </div>
   <div class="tokifield">
     <%= f.label :height %><br>
-    <%= f.text_field :height, :value => (@tokimon.height || 0.0) %>
+    <%= f.text_field :height, :value => (f.object.height || 0.0) %>
   </div>
   <div class="tokifield">
     <%= f.label :fly %><br>
-    <%= f.number_field :fly, :value => (@tokimon.fly || 0 )%>
+    <%= f.number_field :fly, :value => (f.object.fly || 0 )%>
   </div>
   <div class="tokifield">
     <%= f.label :fight %><br>
-    <%= f.number_field :fight, :value => (@tokimon.fight || 0 )%>
+    <%= f.number_field :fight, :value => (f.object.fight || 0 )%>
   </div>
   <div class="tokifield">
     <%= f.label :fire %><br>
-    <%= f.number_field :fire, :value => (@tokimon.fire || 0 ) %>
+    <%= f.number_field :fire, :value => (f.object.fire || 0 ) %>
   </div>
   <div class="tokifield">
     <%= f.label :water %><br>
-    <%= f.number_field :water, :value => (@tokimon.water || 0 )%>
+    <%= f.number_field :water, :value => (f.object.water || 0 )%>
   </div>
   <div class="tokifield">
     <%= f.label :electric %><br>
-    <%= f.number_field :electric, :value => (@tokimon.electric || 0 )%>
+    <%= f.number_field :electric, :value => (f.object.electric || 0 )%>
   </div>
   <div class="tokifield">
     <%= f.label :ice %><br>
-    <%= f.number_field :ice, :value => (@tokimon.ice || 0 )%>
+    <%= f.number_field :ice, :value => (f.object.ice || 0 )%>
   </div>
   <div class="tokifield">
     <%= f.label :trainer_id %><br>
