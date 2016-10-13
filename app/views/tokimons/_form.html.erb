@@ -13,43 +13,43 @@
   <div class="text-center">
   <div class="tokifield">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name , :value => 'No Name'%>
   </div>
   <div class="tokifield">
     <%= f.label :weight %><br>
-    <%= f.text_field :weight %>
+    <%= f.text_field :weight, :value => 0.0%>
   </div>
   <div class="tokifield">
     <%= f.label :height %><br>
-    <%= f.text_field :height %>
+    <%= f.text_field :height, :value => 0.0 %>
   </div>
   <div class="tokifield">
     <%= f.label :fly %><br>
-    <%= f.number_field :fly %>
+    <%= f.number_field :fly, :value => 0.0 %>
   </div>
   <div class="tokifield">
     <%= f.label :fight %><br>
-    <%= f.number_field :fight %>
+    <%= f.number_field :fight, :value => 0.0 %>
   </div>
   <div class="tokifield">
     <%= f.label :fire %><br>
-    <%= f.number_field :fire %>
+    <%= f.number_field :fire, :value => 0.0 %>
   </div>
   <div class="tokifield">
     <%= f.label :water %><br>
-    <%= f.number_field :water %>
+    <%= f.number_field :water, :value => 0.0 %>
   </div>
   <div class="tokifield">
     <%= f.label :electric %><br>
-    <%= f.number_field :electric %>
+    <%= f.number_field :electric, :value => 0.0 %>
   </div>
   <div class="tokifield">
     <%= f.label :ice %><br>
-    <%= f.number_field :ice %>
+    <%= f.number_field :ice, :value => 0.0 %>
   </div>
   <div class="tokifield">
     <%= f.label :trainer_id %><br>
-    <%= collection_select(:tokimon, :trainer_id, Trainer.all, :id, :name, prompt: true) %>
+    <%= collection_select(:tokimon, :trainer_id, Trainer.all, :id, :name, {prompt: true}, {:required => true}) %>
       </div>
 <!--   <div class="tokifield">
     <%= f.label :total %><br>
