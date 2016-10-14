@@ -6,7 +6,10 @@
 <h1>
   <strong>Trainer:</strong>
   <%= @trainer.name %>
-</h1>
+</h1><p class="att2">
+  <strong>Affiliation:</strong>
+  <td> <%= image_tag(trainer.affiliation, size: "70x40") %> </td>
+</p>
 <p class="att2">
   <strong>Level:</strong>
   <%= @trainer.level %>
