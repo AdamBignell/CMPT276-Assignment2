@@ -17,7 +17,7 @@
   </div>
   <div class="tokifield">
     <%= f.label :bodytype %><br>
-    <%= f.select :bodytype, [['Mammal', 'Mammal.jpg'],['Bird','Bird.jpg'],['Fish','Fish.jpg'],['Reptile','Reptile.jpg'],['Insect','Insect.jpg'],['Demon','Demon.jpg'],['Dragon','Dragon.jpg']]%>
+    <%= f.select :bodytype, [['Mammal', 'Mammal.jpg'],['Bird','Bird.jpg'],['Fish','Fish.jpg'],['Reptile','Reptile.jpg'],['Insect','Insect.jpg'],['Demon','Demon.jpg'],['Dragon','Dragon.jpg']], {:required => true}%>
   </div>
   <div class="tokifield">
     <%= f.label :weight %><br>
