@@ -19,9 +19,7 @@
     <% @trainers.each do |trainer| %>
       <tr>
         <td><%= trainer.name %></td>
-        </h1><p class="att2">
-        <strong>Affiliation:</strong>
-        <td> <%= image_tag(trainer.affiliation, size: "70x40") %> </td>
+        <td><%= image_tag(trainer.affiliation, size: "70x40") %> </td>
         </p>
         <td><%= trainer.level %></td>
         <td><%= link_to 'Trainer Card', trainer %></td>
