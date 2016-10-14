@@ -7,6 +7,7 @@ Destroy (Tokimon) -> Release
 
 Features:
   - Customized Headers for Tokidex, New Tokimon/Trainer, Trainers
+  - Added 'bodytype' attribute to tokimon with dropdown menu choices
   - 'Trainer' column of tokidex displays trainer name rather than trainer_id
   - Level cannot be set by the user; must be legitimately achieved by having Tokimon
   - Trainer names are clickable links that lead to Trainer Cards

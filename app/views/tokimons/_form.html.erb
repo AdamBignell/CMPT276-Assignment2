@@ -16,6 +16,10 @@
     <%= f.text_field :name , :value => (f.object.name || 'No Name')%>
   </div>
   <div class="tokifield">
+    <%= f.label :bodytype %><br>
+    <%= f.select :bodytype, [['Mammal', 'Mammal.jpg'],['Bird','Bird.jpg'],['Fish','Fish.jpg'],['Reptile','Reptile.jpg'],['Insect','Insect.jpg'],['Demon','Demon.jpg'],['Dragon','Dragon.jpg']]%>
+  </div>
+  <div class="tokifield">
     <%= f.label :weight %><br>
     <%= f.text_field :weight, :value => (f.object.weight || 0.0)%>
   </div>

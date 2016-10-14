@@ -21,6 +21,7 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Body Type</th>
       <th>Weight</th>
       <th>Height</th>
       <th>Fly</th>
@@ -39,6 +40,7 @@
   <% @alltokimons.each do |tokimon| %>
     <tr>
       <td><%= tokimon.name %></td>
+      <td><%= tokimon.bodytype %></td>
       <td><%= tokimon.weight %></td>
       <td><%= tokimon.height %></td>
       <td><%= tokimon.fly %></td>

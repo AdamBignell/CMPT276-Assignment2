@@ -11,6 +11,7 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Body Type</th>
       <th>Weight</th>
       <th>Height</th>
       <th>Fly</th>
@@ -30,6 +31,7 @@
       <div class='tableFont'>
       <tr>
         <td><%= tokimon.name %></td>
+        <td> <%= image_tag(tokimon.bodytype, size: "70x40") %> </td>
         <td><%= tokimon.weight %></td>
         <td><%= tokimon.height %></td>
         <td><%= tokimon.fly %></td>
@@ -51,7 +53,8 @@
 <br>
 <div class='rubybutton'>
 <%= link_to 'New Tokimon', new_tokimon_path %> |
-<%= link_to 'Trainer Roster', trainers_path %>
+<%= link_to 'Trainer Roster', trainers_path %> |
+<%= link_to 'New Trainer', new_trainer_path %>
 </div>
 <br>
 </div>
