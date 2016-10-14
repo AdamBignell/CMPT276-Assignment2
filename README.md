@@ -9,9 +9,11 @@ Features:
   - Customized Headers for Tokidex, New Tokimon/Trainer, Trainers
   - Added 'bodytype' attribute to tokimon with dropdown menu choices
   - Added images associated with every bodytype
+  - Added 'affiliation' attribute to trainers with dropdown menu choices
+  - Added logos associated with each affiliation
   - 'Trainer' column of tokidex displays trainer name rather than trainer_id
   - Level cannot be set by the user; must be legitimately achieved by having Tokimon
-  - Trainer names are clickable links that lead to Trainer Cards
+  - Trainer names (from tokidex) are clickable links that lead to Trainer Cards
   - Upon Trainer deletion, all associated Tokimon are released
   - Trainer is a required field for tokimon creation
   - New records have default values
