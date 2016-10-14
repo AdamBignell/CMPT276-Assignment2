@@ -40,6 +40,8 @@
         <td><%= tokimon.water %></td>
         <td><%= tokimon.electric %></td>
         <td><%= tokimon.ice %></td>
+        <% tokimon.update_attribute(:total, tokimon.fly + tokimon.fight + tokimon.fire + tokimon.water + tokimon.electric + tokimon.ice) %>
+
         <td><%= tokimon.total%></td>
         <td><%= link_to @trainers.find(tokimon.trainer_id).name, @trainers.find(tokimon.trainer_id) %></td>
         <td><%= link_to 'Stats', tokimon %></td>
